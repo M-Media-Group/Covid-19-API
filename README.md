@@ -96,8 +96,12 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <h2>Built using this API</h2>
 <!-- /wp:heading -->
 
+<!-- wp:paragraph -->
+<p>Feel free to share your projects that implement this API!</p>
+<!-- /wp:paragraph -->
+
 <!-- wp:list -->
-<ul><li><a href="https://mmediagroup.fr/covid-19">https://covid-t.herokuapp.com</a></li><li><a href="https://mmediagroup.fr/covid-19">covid-t.herokuapp.com</a></li></ul>
+<ul><li><a href="https://mmediagroup.fr/covid-19">mmediagroup.fr/covid-19</a></li><li><a href="https://covid-t.herokuapp.com">covid-t.herokuapp.com</a></li></ul>
 <!-- /wp:list -->
 
 <!-- wp:heading -->
