@@ -72,7 +72,7 @@ Our dataset sources have reported that they will stop providing "recovered" case
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li>status<ul><li>Confirmed</li><li>Deaths</li><li>Recovered</li></ul></li></ul>
+<ul><li>status<ul><li>Confirmed</li><li>Deaths</li><li>Recovered (DEPRECIATED)</li></ul></li></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
