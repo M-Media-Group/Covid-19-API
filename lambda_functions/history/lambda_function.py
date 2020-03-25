@@ -5,34 +5,11 @@ from contextlib import closing
 import codecs
 import datetime
 import os
+from get_countries import proccessCountries
 
-country_array = {}
+country_array = proccessCountries()
 global_population = 0
-countries_url ='https://raw.githubusercontent.com/M-Media-Group/country-json/master/src/countries-master.json'
 latest_url ='https://opendata.arcgis.com/datasets/bbb2e4f589ba40d692fab712ae37b9ac_1.csv'
-
-def proccessCountries():
-	global global_population
-	countries = None
-	if not os.path.isfile('/tmp/countries.json'):
-		with closing(get(countries_url, stream=True)) as r:
-			countries = r.json()
-			with open('/tmp/countries.json', 'a+') as file:
-				file.write(json.dumps(countries))
-	else:
-		with open('/tmp/countries.json') as r:
-			countries = json.load(r)
-
-	for country in countries:
-		# break
-		if(country['population'] is not None):
-			global_population = global_population + int(country['population'])
-
-		if(country['country'] not in country_array):
-			country_array[country['country']] = {}
-			for (key, value) in country.items():
-				country_array[country['country']][key] = value
-	return country_array
 
 def proccessMain(status):
 	url ='https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_'+status+'_global.csv'
@@ -49,11 +26,11 @@ def proccessMain(status):
 		if (row['Country/Region'] not in data):
 			data[row['Country/Region']] = {}
 			data[row['Country/Region']]['All'] = {}
-			data[row['Country/Region']]['All']['dates'] = {}
-			
-            if(row['Country/Region'] in country_array):
+			if(row['Country/Region'] in country_array):
 				for key in country_array[row['Country/Region']]:
-					data[row['Country/Region']]['All'][key] = country_array[row['Country/Region']][key]			
+					data[row['Country/Region']]['All'][key] = country_array[row['Country/Region']][key]
+			
+			data[row['Country/Region']]['All']['dates'] = {}
 
 		if row['Province/State'] == '':
 			row['Province/State'] = "All"
@@ -77,7 +54,7 @@ def proccessMain(status):
 					row[column] = 0
 
 				if(column not in converted_dates):
-					converted_dates[column] = datetime.datetime.strptime(column, '%m/%d/%y').strftime('%F')
+					converted_dates[column] = datetime.datetime.strptime(column, '%m/%d/%Y').strftime('%F')
 
 				column = converted_dates[column]
 
@@ -91,7 +68,7 @@ def proccessMain(status):
 
 				data[row['Country/Region']][row['Province/State']]['dates'][column]  = int(row[original_column])
 
-	global_array = {'All': {'population': global_population, 'dates': {}}}
+	global_array = {'All': {'population': country_array['Global']['population'], 'dates': {}}}
 
 	for (key, value) in data.items():
 
@@ -104,7 +81,7 @@ def proccessMain(status):
 	return data
 
 def lambda_handler(event, context):
-	proccessCountries()
+
 	data = proccessMain(event['queryStringParameters']['status'].lower())
 
 	try:
