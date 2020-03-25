@@ -117,5 +117,5 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Population data:<br><a href="https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-population.json">https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-population.json</a></p>
+<p>Population data:<br><a href="https://github.com/M-Media-Group/country-json/blob/master/src/countries-master.json">https://github.com/M-Media-Group/country-json/blob/master/src/countries-master.json</a></p>
 <!-- /wp:paragraph -->
