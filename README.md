@@ -12,9 +12,6 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <p>You can see a human-friendly webpage that uses the API here <a href="https://mmediagroup.fr/covid-19">https://mmediagroup.fr/covid-19</a>.</p>
 <!-- /wp:paragraph -->
 
-## Warning - upcoming major change
-Our dataset sources have reported that they will stop providing "recovered" cases. When this happens, our API will no longer show recovered cases either. Read more here: https://github.com/CSSEGISandData/COVID-19/issues/1250
-
 <!-- wp:heading -->
 <h2>What the API is for</h2>
 <!-- /wp:heading -->
