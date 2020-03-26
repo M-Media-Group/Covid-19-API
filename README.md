@@ -49,7 +49,7 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li>country<ul><li>Any country name (case sensitive)</li></ul></li><li>Any country ISO abbreviation (example: FR) (takes precedence over "country" parameter)</li></ul></li></ul>
+<ul><li>country<ul><li>Any country name (case sensitive)</li></ul></li><li>ab<ul><li>Any country ISO abbreviation (example: FR) (takes precedence over "country" parameter)</li></ul></li></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
