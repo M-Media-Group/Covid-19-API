@@ -107,7 +107,7 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li><a href="https://mmediagroup.fr/covid-19">mmediagroup.fr/covid-19</a></li><li><a href="https://covid-t.herokuapp.com">covid-t.herokuapp.com</a></li></ul>
+<ul><li><a href="https://mmediagroup.fr/covid-19">mmediagroup.fr/covid-19</a></li><li><a href="https://covid-t.herokuapp.com">covid-t.herokuapp.com</a></li><li><a href="https://github.com/Fr0sty404/GoCoronaVirusAPIParser">https://github.com/Fr0sty404/GoCoronaVirusAPIParser</a></li></ul>
 <!-- /wp:list -->
 
 <!-- wp:heading -->
