@@ -129,3 +129,13 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- wp:paragraph -->
 <p>Population data:<br><a href="https://github.com/M-Media-Group/country-json/blob/master/src/countries-master.json">https://github.com/M-Media-Group/country-json/blob/master/src/countries-master.json</a></p>
 <!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>GNU AGPLv3 Licence</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Additionally, we ask you to please not create API's that just use this API as the underlying source.</p>
+<p>Use of this API for commercial purposes is strictly forbidden.</p>
+<p>If you make absurd amounts of requests to our API we will block you. You can contact us to resolve the issue. Please cache the API responses with a lifetime of at least 10 minutes to avoid this happening.</p>
+<!-- /wp:paragraph -->
