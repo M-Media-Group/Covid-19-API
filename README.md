@@ -5,6 +5,10 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
+<p><a href="https://blog.mmediagroup.fr/post/m-media-coronavirus-api-passes-1-million-requests/">This API has now been called over 1 million times!</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
 <p>The API has endpoints to handle historical as well as near realtime data (updated once every hour). The average API response time is between 70 and 250 ms but may take up to 3 seconds, depending if the request is in the cache or not.</p>
 <!-- /wp:paragraph -->
 
