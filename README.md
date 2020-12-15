@@ -1,5 +1,7 @@
 # Covid-19-API
+
 This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
+
 <!-- wp:paragraph -->
 <p>In our bid to do our part, we've created a free public API for others to build apps upon. The API returns live cases and historical data.</p>
 <!-- /wp:paragraph -->
@@ -115,6 +117,7 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
   <li><a href="https://github.com/Fr0sty404/GoCoronaVirusAPIParser">GoCoronaVirusAPIParser</a></li>
  <li><a href="https://blog.mmediagroup.fr/post/coronavirus-covid-19-watch-wordpress-plugin/">Coronavirus-COVID-19-Watch-WordPress-Plugin</a></li>
  <li><a href="https://github.com/ladybug-tools/spider-covid-19-viz-3d">Spider 3d vizualizer</a></li>
+ <li><a href="https://github.com/MasterBrian99/Discord-bot-miku" >Discord bot-miku</a></li>
 </ul>
 <!-- /wp:list -->
 
