@@ -63,7 +63,42 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Example request:<br>GET <a rel="noreferrer noopener" href="https://covid-api.mmediagroup.fr/v1/cases?country=France" target="_blank">/cases?country=France</a></p>
+Example request:
+  <pre><code class="lang-http"><span class="hljs-attr">GET /cases?country</span>=<span class="hljs-string">France</span>
+</code></pre>
+
+Example response:
+<pre><code class="lang-JSON">{
+  <span class="hljs-attr">"All"</span>: {
+    <span class="hljs-attr">"confirmed"</span>: <span class="hljs-number">2604595</span>,
+    <span class="hljs-attr">"recovered"</span>: <span class="hljs-number">195365</span>,
+    <span class="hljs-attr">"deaths"</span>: <span class="hljs-number">62548</span>,
+    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"France"</span>,
+    <span class="hljs-attr">"population"</span>: <span class="hljs-number">64979548</span>,
+    <span class="hljs-attr">"sq_km_area"</span>: <span class="hljs-number">551500</span>,
+    <span class="hljs-attr">"life_expectancy"</span>: <span class="hljs-string">"78.8"</span>,
+    <span class="hljs-attr">"elevation_in_meters"</span>: <span class="hljs-number">375</span>,
+    <span class="hljs-attr">"continent"</span>: <span class="hljs-string">"Europe"</span>,
+    <span class="hljs-attr">"abbreviation"</span>: <span class="hljs-string">"FR"</span>,
+    <span class="hljs-attr">"location"</span>: <span class="hljs-string">"Western Europe"</span>,
+    <span class="hljs-attr">"iso"</span>: <span class="hljs-number">250</span>,
+    <span class="hljs-attr">"capital_city"</span>: <span class="hljs-string">"Paris"</span>,
+    <span class="hljs-attr">"lat"</span>: <span class="hljs-string">"46.2276"</span>,
+    <span class="hljs-attr">"long"</span>: <span class="hljs-string">"2.2137"</span>,
+    <span class="hljs-attr">"updated"</span>: <span class="hljs-string">"2020/12/26 12:21:56+00"</span>
+  },
+  <span class="hljs-attr">"French Guiana"</span>: {
+    <span class="hljs-attr">"lat"</span>: <span class="hljs-string">"4"</span>,
+    <span class="hljs-attr">"long"</span>: <span class="hljs-string">"-53"</span>,
+    <span class="hljs-attr">"confirmed"</span>: <span class="hljs-number">12685</span>,
+    <span class="hljs-attr">"recovered"</span>: <span class="hljs-number">9995</span>,
+    <span class="hljs-attr">"deaths"</span>: <span class="hljs-number">71</span>,
+    <span class="hljs-attr">"updated"</span>: <span class="hljs-string">"2020/12/26 12:21:56+00"</span>
+  },
+  ...
+}
+</code></pre>
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -93,7 +128,35 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Example request:<br>GET <a href="https://covid-api.mmediagroup.fr/v1/history?country=France&amp;status=Confirmed">/history?country=France&amp;status=Confirmed</a></p>
+Example request:
+<pre><code class="lang-http">GET /<span class="hljs-built_in">history</span>?country=Germany&amp;amp;status=Confirmed
+</code></pre>
+
+Example response:
+<pre><code class="lang-json">{
+  <span class="hljs-string">"All"</span>: {
+    <span class="hljs-string">"country"</span>: <span class="hljs-string">"Germany"</span>,
+    <span class="hljs-string">"population"</span>: <span class="hljs-number">82114224</span>,
+    <span class="hljs-string">"sq_km_area"</span>: <span class="hljs-number">357022</span>,
+    <span class="hljs-string">"life_expectancy"</span>: <span class="hljs-string">"77.4"</span>,
+    <span class="hljs-string">"elevation_in_meters"</span>: <span class="hljs-number">263</span>,
+    <span class="hljs-string">"continent"</span>: <span class="hljs-string">"Europe"</span>,
+    <span class="hljs-string">"abbreviation"</span>: <span class="hljs-string">"DE"</span>,
+    <span class="hljs-string">"location"</span>: <span class="hljs-string">"Western Europe"</span>,
+    <span class="hljs-string">"iso"</span>: <span class="hljs-number">276</span>,
+    <span class="hljs-string">"capital_city"</span>: <span class="hljs-string">"Berlin"</span>,
+    <span class="hljs-string">"dates"</span>: {
+      <span class="hljs-string">"2020-12-25"</span>: <span class="hljs-number">29580</span>,
+      <span class="hljs-string">"2020-12-24"</span>: <span class="hljs-number">29330</span>,
+      <span class="hljs-string">"2020-12-23"</span>: <span class="hljs-number">28909</span>,
+      <span class="hljs-string">"2020-12-22"</span>: <span class="hljs-number">28096</span>,
+      <span class="hljs-string">"2020-12-21"</span>: <span class="hljs-number">27110</span>,
+      ...
+    }
+  }
+}
+</code></pre>
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
