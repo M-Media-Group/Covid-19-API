@@ -129,7 +129,7 @@ Example response:
 
 <!-- wp:paragraph -->
 Example request:
-<pre><code class="lang-http">GET /<span class="hljs-built_in">history</span>?country=Germany&amp;status=Confirmed
+<pre><code class="lang-http">GET /<span class="hljs-built_in">history</span>?country=Germany&amp;status=deaths
 </code></pre>
 
 Example response:
