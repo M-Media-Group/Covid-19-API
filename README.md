@@ -177,10 +177,11 @@ Example response:
 
 <!-- wp:list -->
 <ul><li><a href="https://mmediagroup.fr/covid-19">mmediagroup.fr/covid-19</a></li><li><a href="https://covid-t.herokuapp.com">covid-t.herokuapp.com</a></li>
-  <li><a href="https://github.com/Fr0sty404/GoCoronaVirusAPIParser">GoCoronaVirusAPIParser</a></li>
+ <li><a href="https://github.com/Fr0sty404/GoCoronaVirusAPIParser">GoCoronaVirusAPIParser</a></li>
  <li><a href="https://blog.mmediagroup.fr/post/coronavirus-covid-19-watch-wordpress-plugin/">Coronavirus-COVID-19-Watch-WordPress-Plugin</a></li>
  <li><a href="https://github.com/ladybug-tools/spider-covid-19-viz-3d">Spider 3d vizualizer</a></li>
  <li><a href="https://github.com/MasterBrian99/Discord-bot-miku" >Discord bot-miku</a></li>
+ <li><a href="https://github.com/LexxFade/Ivis-Bot"> Ivis-Bot [Discord]</a></li>
 </ul>
 <!-- /wp:list -->
 
