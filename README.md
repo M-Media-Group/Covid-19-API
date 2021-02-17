@@ -7,7 +7,7 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="https://blog.mmediagroup.fr/post/m-media-coronavirus-api-passes-1-million-requests/">This API has now been called over 1 million times!</a></p>
+<p><a href="https://blog.mmediagroup.fr/post/m-media-coronavirus-api-passes-1-million-requests/">This API has now been called over 1 million times!</a> - scratch that, we're at 2 million now!</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
