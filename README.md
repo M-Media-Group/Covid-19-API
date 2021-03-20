@@ -164,7 +164,7 @@ Example response:
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Request:<br>GET <a rel="noreferrer noopener" href="https://covid-api.mmediagroup.fr/v1/cases" target="_blank">/vaccines</a></p>
+<p>Request:<br>GET <a rel="noreferrer noopener" href="https://covid-api.mmediagroup.fr/v1/vaccines" target="_blank">/vaccines</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
