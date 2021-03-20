@@ -160,6 +160,56 @@ Example response:
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
+<h3>Vaccines data</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Request:<br>GET <a rel="noreferrer noopener" href="https://covid-api.mmediagroup.fr/v1/cases" target="_blank">/vaccines</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Optional query parameters</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul>
+  <li>country<ul><li>Any country name (case sensitive)</li></ul></li>
+  <li>ab<ul><li>Any country ISO abbreviation (example: FR) (takes precedence over "country" parameter)</li></ul></li>
+  <li>continent<ul><li>Any world continent (example: Europe) (takes precedence over "country" parameter)</li></ul></li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+Example request:
+  <pre><code class="lang-http"><span class="hljs-attr">GET /vaccines?country</span>=<span class="hljs-string">France</span>
+</code></pre>
+
+Example response:
+<pre><code class="lang-JSON">{
+  <span class="hljs-attr">"All"</span>: {
+    <span class="hljs-attr">"administered"</span>: <span class="hljs-number">7927771</span>,
+    <span class="hljs-attr">"people_vaccinated"</span>: <span class="hljs-number">5630671</span>,
+    <span class="hljs-attr">"people_partially_vaccinated"</span>: <span class="hljs-number">2297100</span>,
+    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"France"</span>,
+    <span class="hljs-attr">"population"</span>: <span class="hljs-number">64979548</span>,
+    <span class="hljs-attr">"sq_km_area"</span>: <span class="hljs-number">551500</span>,
+    <span class="hljs-attr">"life_expectancy"</span>: <span class="hljs-string">"78.8"</span>,
+    <span class="hljs-attr">"elevation_in_meters"</span>: <span class="hljs-number">375</span>,
+    <span class="hljs-attr">"continent"</span>: <span class="hljs-string">"Europe"</span>,
+    <span class="hljs-attr">"abbreviation"</span>: <span class="hljs-string">"FR"</span>,
+    <span class="hljs-attr">"location"</span>: <span class="hljs-string">"Western Europe"</span>,
+    <span class="hljs-attr">"iso"</span>: <span class="hljs-number">250</span>,
+    <span class="hljs-attr">"capital_city"</span>: <span class="hljs-string">"Paris"</span>,
+    <span class="hljs-attr">"lat"</span>: <span class="hljs-string">"46.2276"</span>,
+    <span class="hljs-attr">"long"</span>: <span class="hljs-string">"2.2137"</span>,
+    <span class="hljs-attr">"updated"</span>: <span class="hljs-string">"2020/12/26 12:21:56+00"</span>
+  }
+}
+</code></pre>
+
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
 <h3>Authorization</h3>
 <!-- /wp:heading -->
 
