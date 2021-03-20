@@ -251,6 +251,10 @@ Example response:
 <p>Population data:<br><a href="https://github.com/M-Media-Group/country-json/blob/master/src/countries-master.json">https://github.com/M-Media-Group/country-json/blob/master/src/countries-master.json</a></p>
 <!-- /wp:paragraph -->
 
+<!-- wp:paragraph -->
+<p>Vaccine data:&nbsp;<a rel="noreferrer noopener" href="https://github.com/govex/COVID-19" target="_blank">https://github.com/govex/COVID-19</a></p>
+<!-- /wp:paragraph -->
+
 <!-- wp:heading -->
 <h2>GNU AGPLv3 Licence</h2>
 <!-- /wp:heading -->
