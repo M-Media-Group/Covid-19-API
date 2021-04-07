@@ -188,8 +188,8 @@ Example response:
 <pre><code class="lang-JSON">{
   <span class="hljs-attr">"All"</span>: {
     <span class="hljs-attr">"administered"</span>: <span class="hljs-number">7927771</span>,
-    <span class="hljs-attr">"people_vaccinated"</span>: <span class="hljs-number">5630671</span>,
-    <span class="hljs-attr">"people_partially_vaccinated"</span>: <span class="hljs-number">2297100</span>,
+    <span class="hljs-attr">"people_vaccinated"</span>: <span class="hljs-number">2297100</span>,
+    <span class="hljs-attr">"people_partially_vaccinated"</span>: <span class="hljs-number">5630671</span>,
     <span class="hljs-attr">"country"</span>: <span class="hljs-string">"France"</span>,
     <span class="hljs-attr">"population"</span>: <span class="hljs-number">64979548</span>,
     <span class="hljs-attr">"sq_km_area"</span>: <span class="hljs-number">551500</span>,
