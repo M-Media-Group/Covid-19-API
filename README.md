@@ -255,6 +255,15 @@ Example response:
 <p>Vaccine data:&nbsp;<a rel="noreferrer noopener" href="https://github.com/govex/COVID-19" target="_blank">https://github.com/govex/COVID-19</a></p>
 <!-- /wp:paragraph -->
 
+
+<!-- wp:heading -->
+<h2>Rate limits</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>A rate limiter is applied. Realistically, the data updates around once an hour so more frequent requests are futile (though possible). Ridiculous amount of requests will result in you being banned.</p>
+<!-- /wp:paragraph -->
+
 <!-- wp:heading -->
 <h2>GNU AGPLv3 Licence</h2>
 <!-- /wp:heading -->
