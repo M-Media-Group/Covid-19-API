@@ -201,8 +201,8 @@ def proccessVaccinated():
                 vaccine_data[row['Country_Region']][row['Province_State']] = {}
             
             vaccine_data[row['Country_Region']][row['Province_State']]['administered'] = int(float(row['Doses_admin']))
-            vaccine_data[row['Country_Region']][row['Province_State']]['people_vaccinated'] = int(float(row['People_partially_vaccinated']))
-            vaccine_data[row['Country_Region']][row['Province_State']]['people_partially_vaccinated'] = int(float(row['People_fully_vaccinated']))
+            vaccine_data[row['Country_Region']][row['Province_State']]['people_vaccinated'] = int(float(row['People_fully_vaccinated']))
+            vaccine_data[row['Country_Region']][row['Province_State']]['people_partially_vaccinated'] = int(float(row['People_partially_vaccinated']))
             #vaccine_data[row['Country_Region']][row['Province_State']]['updated'] = row['Date']
             vaccine_data[row['Country_Region']][row['Province_State']]['updated'] = datetime.datetime.strptime(row['Date'], '%Y-%m-%d').strftime('%Y/%m/%d %H:%M:%S+00')
         
