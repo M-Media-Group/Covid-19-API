@@ -133,29 +133,30 @@ Example request:
 </code></pre>
 
 Example response:
-<pre><code class="lang-json">{
-  <span class="hljs-string">"All"</span>: {
-    <span class="hljs-string">"country"</span>: <span class="hljs-string">"Germany"</span>,
-    <span class="hljs-string">"population"</span>: <span class="hljs-number">82114224</span>,
-    <span class="hljs-string">"sq_km_area"</span>: <span class="hljs-number">357022</span>,
-    <span class="hljs-string">"life_expectancy"</span>: <span class="hljs-string">"77.4"</span>,
-    <span class="hljs-string">"elevation_in_meters"</span>: <span class="hljs-number">263</span>,
-    <span class="hljs-string">"continent"</span>: <span class="hljs-string">"Europe"</span>,
-    <span class="hljs-string">"abbreviation"</span>: <span class="hljs-string">"DE"</span>,
-    <span class="hljs-string">"location"</span>: <span class="hljs-string">"Western Europe"</span>,
-    <span class="hljs-string">"iso"</span>: <span class="hljs-number">276</span>,
-    <span class="hljs-string">"capital_city"</span>: <span class="hljs-string">"Berlin"</span>,
-    <span class="hljs-string">"dates"</span>: {
-      <span class="hljs-string">"2020-12-25"</span>: <span class="hljs-number">29580</span>,
-      <span class="hljs-string">"2020-12-24"</span>: <span class="hljs-number">29330</span>,
-      <span class="hljs-string">"2020-12-23"</span>: <span class="hljs-number">28909</span>,
-      <span class="hljs-string">"2020-12-22"</span>: <span class="hljs-number">28096</span>,
-      <span class="hljs-string">"2020-12-21"</span>: <span class="hljs-number">27110</span>,
+```JSON
+{
+  "All": {
+    "country": "Germany",
+    "population": 82114224,
+    "sq_km_area": 357022,
+    "life_expectancy": "77.4",
+    "elevation_in_meters": 263,
+    "continent": "Europe",
+    "abbreviation": "DE",
+    "location": "Western Europe",
+    "iso": 276,
+    "capital_city": "Berlin",
+    "dates": {
+      "2020-12-25": 29580,
+      "2020-12-24": 29330,
+      "2020-12-23": 28909,
+      "2020-12-22": 28096,
+      "2020-12-21": 27110,
       ...
     }
   }
 }
-</code></pre>
+```
 
 <!-- /wp:paragraph -->
 
