@@ -7,7 +7,7 @@ This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="https://blog.mmediagroup.fr/post/m-media-coronavirus-api-passes-1-million-requests/">This API has now been called over 1 million times!</a> - scratch that, we're at <a href="https://blog.mmediagroup.fr/post/m-media-coronavirus-api-reaches-2-million-requests/">2 million now! (actually 30 million now but I can't keep up with article writing :P)</a></p>
+<p><a href="https://blog.mmediagroup.fr/post/m-media-coronavirus-api-passes-1-million-requests/">This API has now been called over <a href="https://blog.mmediagroup.fr/post/m-media-covid-api-passes-30-million-requests/">30 million times now!</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -68,36 +68,36 @@ Example request:
 </code></pre>
 
 Example response:
-<pre><code class="lang-JSON">{
-  <span class="hljs-attr">"All"</span>: {
-    <span class="hljs-attr">"confirmed"</span>: <span class="hljs-number">2604595</span>,
-    <span class="hljs-attr">"recovered"</span>: <span class="hljs-number">195365</span>,
-    <span class="hljs-attr">"deaths"</span>: <span class="hljs-number">62548</span>,
-    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"France"</span>,
-    <span class="hljs-attr">"population"</span>: <span class="hljs-number">64979548</span>,
-    <span class="hljs-attr">"sq_km_area"</span>: <span class="hljs-number">551500</span>,
-    <span class="hljs-attr">"life_expectancy"</span>: <span class="hljs-string">"78.8"</span>,
-    <span class="hljs-attr">"elevation_in_meters"</span>: <span class="hljs-number">375</span>,
-    <span class="hljs-attr">"continent"</span>: <span class="hljs-string">"Europe"</span>,
-    <span class="hljs-attr">"abbreviation"</span>: <span class="hljs-string">"FR"</span>,
-    <span class="hljs-attr">"location"</span>: <span class="hljs-string">"Western Europe"</span>,
-    <span class="hljs-attr">"iso"</span>: <span class="hljs-number">250</span>,
-    <span class="hljs-attr">"capital_city"</span>: <span class="hljs-string">"Paris"</span>,
-    <span class="hljs-attr">"lat"</span>: <span class="hljs-string">"46.2276"</span>,
-    <span class="hljs-attr">"long"</span>: <span class="hljs-string">"2.2137"</span>,
-    <span class="hljs-attr">"updated"</span>: <span class="hljs-string">"2020/12/26 12:21:56+00"</span>
+```json
+{
+  "All": {
+    "confirmed": 2604595,
+    "recovered": 195365,
+    "deaths": 62548,
+    "country": "France",
+    "population": 64979548,
+    "sq_km_area": 551500,
+    "life_expectancy": "78.8",
+    "elevation_in_meters": 375,
+    "continent": "Europe",
+    "abbreviation": "FR",
+    "location": "Western Europe",
+    "iso": 250,
+    "capital_city": "Paris",
+    "lat": "46.2276",
+    "long": "2.2137",
+    "updated": "2020/12/26 12:21:56+00"
   },
-  <span class="hljs-attr">"French Guiana"</span>: {
-    <span class="hljs-attr">"lat"</span>: <span class="hljs-string">"4"</span>,
-    <span class="hljs-attr">"long"</span>: <span class="hljs-string">"-53"</span>,
-    <span class="hljs-attr">"confirmed"</span>: <span class="hljs-number">12685</span>,
-    <span class="hljs-attr">"recovered"</span>: <span class="hljs-number">9995</span>,
-    <span class="hljs-attr">"deaths"</span>: <span class="hljs-number">71</span>,
-    <span class="hljs-attr">"updated"</span>: <span class="hljs-string">"2020/12/26 12:21:56+00"</span>
-  },
-  ...
+  "French Guiana": {
+    "lat": "4",
+    "long": "-53",
+    "confirmed": 12685,
+    "recovered": 9995,
+    "deaths": 71,
+    "updated": "2020/12/26 12:21:56+00"
+  }
 }
-</code></pre>
+```
 
 <!-- /wp:paragraph -->
 
