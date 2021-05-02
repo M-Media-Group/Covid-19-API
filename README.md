@@ -151,8 +151,7 @@ Example response:
       "2020-12-24": 29330,
       "2020-12-23": 28909,
       "2020-12-22": 28096,
-      "2020-12-21": 27110,
-      ...
+      "2020-12-21": 27110
     }
   }
 }
@@ -186,27 +185,28 @@ Example request:
 </code></pre>
 
 Example response:
-<pre><code class="lang-JSON">{
-  <span class="hljs-attr">"All"</span>: {
-    <span class="hljs-attr">"administered"</span>: <span class="hljs-number">7927771</span>,
-    <span class="hljs-attr">"people_vaccinated"</span>: <span class="hljs-number">2297100</span>,
-    <span class="hljs-attr">"people_partially_vaccinated"</span>: <span class="hljs-number">5630671</span>,
-    <span class="hljs-attr">"country"</span>: <span class="hljs-string">"France"</span>,
-    <span class="hljs-attr">"population"</span>: <span class="hljs-number">64979548</span>,
-    <span class="hljs-attr">"sq_km_area"</span>: <span class="hljs-number">551500</span>,
-    <span class="hljs-attr">"life_expectancy"</span>: <span class="hljs-string">"78.8"</span>,
-    <span class="hljs-attr">"elevation_in_meters"</span>: <span class="hljs-number">375</span>,
-    <span class="hljs-attr">"continent"</span>: <span class="hljs-string">"Europe"</span>,
-    <span class="hljs-attr">"abbreviation"</span>: <span class="hljs-string">"FR"</span>,
-    <span class="hljs-attr">"location"</span>: <span class="hljs-string">"Western Europe"</span>,
-    <span class="hljs-attr">"iso"</span>: <span class="hljs-number">250</span>,
-    <span class="hljs-attr">"capital_city"</span>: <span class="hljs-string">"Paris"</span>,
-    <span class="hljs-attr">"lat"</span>: <span class="hljs-string">"46.2276"</span>,
-    <span class="hljs-attr">"long"</span>: <span class="hljs-string">"2.2137"</span>,
-    <span class="hljs-attr">"updated"</span>: <span class="hljs-string">"2020/12/26 12:21:56+00"</span>
+```JSON
+{
+  "All": {
+    "administered": 7927771,
+    "people_vaccinated": 2297100,
+    "people_partially_vaccinated": 5630671,
+    "country": "France",
+    "population": 64979548,
+    "sq_km_area": 551500,
+    "life_expectancy": "78.8",
+    "elevation_in_meters": 375,
+    "continent": "Europe",
+    "abbreviation": "FR",
+    "location": "Western Europe",
+    "iso": 250,
+    "capital_city": "Paris",
+    "lat": "46.2276",
+    "long": "2.2137",
+    "updated": "2020/12/26 12:21:56+00"
   }
 }
-</code></pre>
+```
 
 <!-- /wp:paragraph -->
 
