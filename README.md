@@ -233,6 +233,7 @@ Example response:
  <li><a href="https://github.com/ladybug-tools/spider-covid-19-viz-3d">Spider 3d vizualizer</a></li>
  <li><a href="https://github.com/MasterBrian99/Discord-bot-miku" >Discord bot-miku</a></li>
  <li><a href="https://github.com/LexxFade/Ivis-Bot"> Ivis-Bot [Discord]</a></li>
+ <li><a href="https://github.com/CrisesKhaos/COVID-19">NoCo Mobile App</a></li>
 </ul>
 <!-- /wp:list -->
 
