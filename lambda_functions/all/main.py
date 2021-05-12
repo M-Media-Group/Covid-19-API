@@ -195,7 +195,8 @@ def proccessVaccinated():
                 for key in country_array[row['Country_Region']]:
                     vaccine_data[row['Country_Region']]['All'][key] = country_array[row['Country_Region']][key]
         
-            row['Province_State'] = "All"
+            if row['Province_State'] == '':
+                row['Province_State'] = "All"
         
             if (row['Province_State'] not in vaccine_data[row['Country_Region']]):
                 vaccine_data[row['Country_Region']][row['Province_State']] = {}
