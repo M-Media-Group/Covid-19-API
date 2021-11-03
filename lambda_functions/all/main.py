@@ -187,7 +187,7 @@ def proccessVaccinated():
                 vaccine_data[row['Country_Region']]['All']['people_vaccinated'] = 0
                 vaccine_data[row['Country_Region']]['All']['people_partially_vaccinated'] = 0
             
-            country_array['Global']['administered'] = country_array['Global']['administered'] + int(float(row['Doses_admin']))
+            country_array['Global']['administered'] = (country_array['Global']['administered'] + int(float(row['Doses_admin']))) if row['Doses_admin'] else 0
             country_array['Global']['people_partially_vaccinated'] = country_array['Global']['people_partially_vaccinated'] + int(float(row['People_partially_vaccinated'])) if row['People_partially_vaccinated'].strip() != "" else 0
             country_array['Global']['people_vaccinated'] = country_array['Global']['people_vaccinated'] + int(float(row['People_fully_vaccinated'])) if row['People_fully_vaccinated'].strip() != "" else 0
 
@@ -196,12 +196,12 @@ def proccessVaccinated():
                     vaccine_data[row['Country_Region']]['All'][key] = country_array[row['Country_Region']][key]
         
             if row['Province_State'] == '':
-                row['Province_State'] = "All"
+            	row['Province_State'] = "All"
         
             if (row['Province_State'] not in vaccine_data[row['Country_Region']]):
                 vaccine_data[row['Country_Region']][row['Province_State']] = {}
             
-            vaccine_data[row['Country_Region']][row['Province_State']]['administered'] = int(float(row['Doses_admin']))
+            vaccine_data[row['Country_Region']][row['Province_State']]['administered'] = int(float(row['Doses_admin'])) if row['Doses_admin'] else 0
             vaccine_data[row['Country_Region']][row['Province_State']]['people_vaccinated'] = int(float(row['People_fully_vaccinated'])) if row['People_fully_vaccinated'].strip() != "" else 0
             vaccine_data[row['Country_Region']][row['Province_State']]['people_partially_vaccinated'] = int(float(row['People_partially_vaccinated'])) if row['People_partially_vaccinated'].strip() != "" else 0
             #vaccine_data[row['Country_Region']][row['Province_State']]['updated'] = row['Date']
