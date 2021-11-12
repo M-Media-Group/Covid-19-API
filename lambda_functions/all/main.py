@@ -115,7 +115,6 @@ def proccessLatest():
 		# yield [unicode(cell, 'utf-8') for cell in row]
 
 		if ('Last_Update' not in row or row['Last_Update'] == ''):
-			print(row)
 			continue
 
 		if (row['Country_Region'] not in recent_data):
@@ -177,7 +176,6 @@ def proccessVaccinated():
             # yield [unicode(cell, 'utf-8') for cell in row]
 
             if ('Date' not in row or row['Date'] == ''):
-                print(row)
                 continue
 
             if (row['Country_Region'] not in vaccine_data):

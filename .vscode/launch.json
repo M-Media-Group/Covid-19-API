@@ -1,0 +1,70 @@
+{
+  "configurations": [
+    {
+        "type": "aws-sam",
+        "request": "direct-invoke",
+        "name": "Cases (python3.8)",
+        "invokeTarget": {
+            "target": "api",
+            "templatePath": "${workspaceFolder}/template.yaml",
+            "logicalId": "GetCasesFunction"
+        },
+        "lambda": {
+            "runtime": "python3.8",
+            "payload": {},
+            "environmentVariables": {}
+        },
+        "api": {
+            "path": "/cases",
+            "httpMethod": "get",
+            "payload": {
+                "json": {}
+            }
+        }
+    },
+    {
+        "type": "aws-sam",
+        "request": "direct-invoke",
+        "name": "Vaccines (python3.8)",
+        "invokeTarget": {
+            "target": "api",
+            "templatePath": "${workspaceFolder}/template.yaml",
+            "logicalId": "GetCasesFunction"
+        },
+        "lambda": {
+            "runtime": "python3.8",
+            "payload": {},
+            "environmentVariables": {}
+        },
+        "api": {
+            "path": "/vaccines",
+            "httpMethod": "get",
+            "payload": {
+                "json": {}
+            }
+        }
+    },
+    {
+        "type": "aws-sam",
+        "request": "direct-invoke",
+        "invokeTarget": {
+            "target": "api",
+            "logicalId": "GetCasesFunction",
+            "templatePath": "${workspaceFolder}/template.yaml"
+        },
+        "lambda": {
+            "runtime": "python3.8"
+        },
+        "sam": {
+            "containerBuild": false,
+            "skipNewImageCheck": false
+        },
+        "api": {
+            "path": "/history",
+            "httpMethod": "get",
+            "querystring": "status=deaths"
+        },
+        "name": "History (deaths) (python3.8)"
+    }
+]
+}
