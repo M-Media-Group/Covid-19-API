@@ -2,36 +2,36 @@ import os
 from contextlib import closing
 from requests import get
 import json
+from util.helpers.constants import COUNTRIES_URL
 
 
-def proccessCountries():
-    country_array = {}
-    country_array['Global'] = {}
-    country_array['Global']['population'] = 0
+def get_countries() -> dict:
+    """
+    get countries data from url or from local folder
+    """
+    countries_array = {}
+    countries_array["Global"] = {}
+    countries_array["Global"]["population"] = 0
 
-    countries = None
-    countries_url = 'https://raw.githubusercontent.com/M-Media-Group/country-json/master/src/countries-master.json'
-
-    if not os.path.isfile('/tmp/countries.json'):
-        with closing(get(countries_url, stream=True)) as r:
-            countries = r.json()
-            with open('/tmp/countries.json', 'a+') as file:
-                file.write(json.dumps(countries))
+    if os.path.isfile("/tmp/countries.json"):
+        with open("/tmp/countries.json") as file:
+            countries_data = json.load(file)
     else:
-        with open('/tmp/countries.json') as r:
-            countries = json.load(r)
+        with closing(get(COUNTRIES_URL, stream=True)) as response:
+            countries_data = response.json()
 
-    for country in countries:
-        # break
-        if (country['population'] is not None):
-            country_array['Global']['population'] = country_array['Global'][
-                'population'] + int(country['population'])
+    for country_data in countries_data:
+        if country_data["population"]:
+            countries_array["Global"]["population"] = countries_array["Global"][
+                "population"
+            ] + int(country_data["population"])
 
-        if (country['country'] not in country_array):
-            country_array[country['country']] = {}
-            for (key, value) in country.items():
-                if (str(value).isdigit()):
-                    country_array[country['country']][key] = int(value)
+        if country_data["country"] not in countries_array:
+            countries_array[country_data["country"]] = {}
+            for (key, value) in country_data.items():
+                if str(value).isdigit():
+                    countries_array[country_data["country"]][key] = int(value)
                 else:
-                    country_array[country['country']][key] = value
-    return country_array
+                    countries_array[country_data["country"]][key] = value
+
+    return countries_array

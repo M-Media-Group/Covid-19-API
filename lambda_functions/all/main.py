@@ -17,9 +17,9 @@ from contextlib import closing
 import codecs
 import datetime
 import os
-from get_countries import proccessCountries
+from get_countries import get_countries
 
-country_array = proccessCountries()
+country_array = get_countries()
 
 
 def getRowsFromCsv(url):
