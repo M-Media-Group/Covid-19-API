@@ -1,4 +1,5 @@
 # Covid-19-API
+**Deprecation of this API is scheduled for end of October 2022.**
 
 This is the code running in AWS Lambda powering covid-api.mmediagroup.fr/v1
 
